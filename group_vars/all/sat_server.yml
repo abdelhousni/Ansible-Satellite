@@ -2,3 +2,10 @@
 sat_organization: "dar"
 sat_location: "dar"
 sat_validate_certs: false
+
+validate_certs: false
+domain_name: dar
+current_lce: DEV
+target_lce: PRD
+beginningversion: 1
+endingversion: 2

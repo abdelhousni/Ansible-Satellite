@@ -45,13 +45,22 @@ content_views:
       - "DEV"
       - "PRD"
 
-# composite_content_views:
-#  - name: "RHEL79to84Upgrade"
-#    desc: "RHEL 7.9 to 8.4 Upgrade Content"
-#    org: "{{ sat_organization }}"
-#    components:
-#    - "UpgradeFromRHEL79"
-#    - "UpgradeToRHEL84"
-#    environments:
-#    - "SOE_Development"
-#    - "SOE_Qualification"
+composite_content_views:
+  - name: "CCV_RHEL8"
+    desc: "CCV_RHEL8"
+    org: "{{ sat_organization }}"
+    components:
+    - "CV_RHEL8"
+    environments:
+    - "Library"
+    - "DEV"
+    - "PRD"
+  - name: "CCV_RHEL9"
+    desc: "CCV_RHEL9"
+    org: "{{ sat_organization }}"
+    components:
+    - "CV_RHEL9"
+    environments:
+    - "Library"
+    - "DEV"
+    - "PRD"
